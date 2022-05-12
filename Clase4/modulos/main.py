@@ -1,6 +1,7 @@
-import saludos
+#import saludos
+#saludos.saludo()
+#print(saludos.nombre)
 
-saludos.saludo()
+from saludos import saludo_nombre
 
-print(saludos.nombre)
-
+saludo_nombre("dante")
