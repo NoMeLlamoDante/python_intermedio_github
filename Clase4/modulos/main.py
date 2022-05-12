@@ -16,6 +16,8 @@
 #
 #saludo 1
 
-from carpetas import crear_carpetas
+from carpetas import *
 
-crear_carpetas("prueba_carpeta", 3)
+#crear_carpetas("prueba_carpeta", 16)
+
+eliminar_carpetas("prueba_carpeta", 15)
