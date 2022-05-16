@@ -1,0 +1,1 @@
+escribiendo arhivo usando with
