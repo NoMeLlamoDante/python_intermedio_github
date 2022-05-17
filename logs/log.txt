@@ -1,0 +1,5 @@
+Datos de PC
+ cantida de nucleos: 8 
+frecuencia: scpufreq(current=2808.0, min=0.0, max=2808.0) 
+ memoria Virtual: svmem(total=59943370752, available=48964976640, percent=18.3, used=10978394112, free=48964976640)
+ Disco duro: 
