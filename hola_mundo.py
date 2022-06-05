@@ -1,0 +1,1 @@
+from Clase8.auth.register import reg
