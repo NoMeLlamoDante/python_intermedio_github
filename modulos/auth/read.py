@@ -1,5 +1,6 @@
+import email
 import psycopg2
-from .connection import get_connection, query_conditions
+from .connection import get_connection, condition
 # https://www.psycopg.org/docs/module.html#exceptions
 
 def read_users():
@@ -16,12 +17,11 @@ def read_users():
         conn.close()
     return result
 
-def read_user(**kwargs):
+def read_user(search):
     conn, cur = get_connection()
-    query = f"SELECT id, username, email, status FROM usuarios {query_conditions(**kwargs)};"
-    # if not conditions
-    if not kwargs:
-        return None
+    # query = f"SELECT id, username, password, email, status FROM usuarios WHERE {query_conditions('AND ',**kwargs)};"
+    # acording to Search parameter
+    query = f"SELECT id, username, password, email, status FROM usuarios WHERE { condition(search) };"
     try:
         cur.execute(query)
         # Just 1 Result

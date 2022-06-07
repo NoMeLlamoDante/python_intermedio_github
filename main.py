@@ -1,4 +1,3 @@
-import email
 import os
 from modulos.auth.login import is_authenticated
 from modulos.auth.register import singIn
@@ -14,11 +13,11 @@ os.system('cls')
 
 
 # Read all users
-# print(read_users())
+#print(read_users())
 # Search one user
-# print(read_user(username='test3'))
-# print(read_user(id=106))
-# print(read_user(email='test3@gmail'))
+# print(read_user('test3'))
+# print(read_user(106))
+# print(read_user('correo3@gmail.com'))
 
 # Auth invalid
 # print(is_authenticated("user", "pass"))
@@ -26,11 +25,12 @@ os.system('cls')
 # print(is_authenticated('adenisoy','j1JT2nHX'))
 
 # Sign In 
-# print(singIn('test4', 'pass4', 'test4@gmail.com'))
+#n = 7
+#print(singIn(f'test{n}', f'pass{n}', f'test{n}@gmail.com'))
 
 # Delete User
-# print(delete_user(id = 105))
+#print(delete_user("test4"))
 
 # Update User
-# print(update_user(106, username="test4", email="eldeprueba@gmail.com"))
+print(update_user(107, username="test4", password='pass4', email="eldeprueba@gmail.com"))
 # print("end")
